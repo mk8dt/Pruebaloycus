@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_s"
+    android:layout_margin="@dimen/size_s"
+    app:cardCornerRadius="@dimen/size_xxs"
+    android:elevation="@dimen/size_xxs">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_s">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvEventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Montar en bicicleta por Madrid" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/labelEventLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_s"
+            android:text="@string/label_event_location"
+            android:textColor="@color/black"
+            android:textSize="@dimen/letter_16"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEventTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvEventLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_s"
+            android:layout_marginEnd="@dimen/size_s"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelEventLocation"
+            tools:text="Calle Mayor 4" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/labelEventPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_s"
+            android:text="@string/label_event_price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/letter_16"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEventLocation" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvEventPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_s"
+            android:layout_marginEnd="@dimen/size_s"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEventLocation"
+            tools:text="Entrada general 15 euros" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

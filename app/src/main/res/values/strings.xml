@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="label_event_location">Localización</string>
+    <string name="label_event_price">Precio</string>
+    <string name="label_description_event">Descripcion</string>
+    <string name="label_start_date_event">Fecha de inicio</string>
+    <string name="label_link_url"><u> Visitar sitio web </u></string>
+    <string name="label_init_gps"><u>Iniciar GPS</u></string>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/size_s">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvEventTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/letter_18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Titulo del evento en Madrid" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelDescriptionEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_s"
+        android:text="@string/label_description_event"
+        android:textColor="@color/black"
+        android:textSize="@dimen/letter_18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEventTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDescriptionEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_s"
+        android:textSize="@dimen/letter_16"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelDescriptionEvent"
+        tools:maxLines="4"
+        tools:text="@tools:sample/lorem/random" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_s"
+        android:text="@string/label_start_date_event"
+        android:textColor="@color/black"
+        android:textSize="@dimen/letter_18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescriptionEvent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_s"
+        android:layout_marginTop="@dimen/size_s"
+        android:layout_marginEnd="@dimen/size_s"
+        android:textSize="@dimen/letter_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescriptionEvent"
+        tools:text="18-10-2021" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_s"
+        android:text="@string/label_event_price"
+        android:textColor="@color/black"
+        android:textSize="@dimen/letter_18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelStartDate" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_s"
+        android:layout_marginTop="@dimen/size_s"
+        android:layout_marginEnd="@dimen/size_s"
+        android:textSize="@dimen/letter_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStartDate"
+        tools:text="Entrada general 15 €" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelLinkUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_s"
+        android:layout_marginEnd="@dimen/size_s"
+        android:text="@string/label_link_url"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="@dimen/letter_16"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPrice" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_s"
+        android:layout_marginEnd="@dimen/size_s"
+        android:text="@string/label_event_location"
+        android:textColor="@color/black"
+        android:textSize="@dimen/letter_16"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelLinkUrl" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelOpenMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_s"
+        android:layout_marginEnd="@dimen/size_s"
+        android:text="@string/label_init_gps"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="@dimen/letter_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelLinkUrl" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_s"
+        android:layout_marginEnd="@dimen/size_s"
+        android:textColor="@color/black"
+        android:textSize="@dimen/letter_16"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelLocation"
+        tools:text="Calle Mayor 25" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
